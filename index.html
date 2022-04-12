@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <script src="js\main.js"></script>
+    
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<header class="header">
+
+
+    <a href="#" class="logo"><img src="images/bd.PNG" alt=""> bandwidth </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="price.html">pricing</a>
+        <a href="reviews.html">reviews</a>
+    </nav>
+
+    <div >
+        <a href="logIn.html" id="user"><span id="user-account" class="fas fa-user"></span></a>
+        <span id="menu-btn" class="fas fa-bars"></span>
+    </div>
+
+    <!-- <div id="user-account" class="fas fa-user"></div>
+
+    <div id="menu-btn" class="fas fa-bars"></div> -->
+    
+    <p id="reloadText">111111111111</p>
+    <a href="logIn.html" target="_blank" class="btn">join us</a>
+    <button id="logout" onclick="logout()">LogOut</button>
+
+</header>
+<script>
+    var i=localStorage.getItem('LogInAccount');
+    document.getElementById("reloadText").innerHTML="welcome "+myArray[i].firstName;
+</script>
+<!-- header section ends     -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="image">
+        <!-- <img src="images/home-img.svg" alt=""> -->
+        <!-- rotating image starts -->
+        <div class="mySlides fade">
+            <img src="images/slide-1.jpg">
+        </div>
+          
+        <div class="mySlides fade">
+          <img src="images/slide-2.jpg" >
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/slide-3.jpg">
+        </div>
+        <br>
+          
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+          
+    </div>
+    
+        <!-- rotating image ends -->
+    </div>
+
+    <div class="content">
+        <h3> <span class="line-down">universal platform</span> <br>for global enterprise communications</h3>
+        <p>Bandwidth is the global cloud platform enterprises choose for cloud-ready voice, messaging, and emergency services.</p>
+        <!-- <a href="#" class="btn">get started</a> -->
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <div class="heading">
+        <span>our services</span>
+        <h1>what we provide?</h1>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/icon-1.svg" alt="">
+            <h3>Communication APIs</h3>
+            <p>Easily embed voice calling, text messaging, and emergency services access into your software or application with our industry-leading APIs.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/icon-2.svg" alt="">
+            <h3>Enterprise Cloud</h3>
+            <p>Get powerful SIP and emergency services built to seamlessly integrate and scale with your tech stack.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/icon-3.svg" alt="">
+            <h3>Direct Access</h3>
+            <p>Connect your infrastructure at the network level for undeniable control and extensive network coverage for voice, toll-free, emergency services, and more.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/icon-4.svg" alt="">
+            <h3>Phone Number Management</h3>
+            <p>Millions of phone numbers along with industry-leading phone number management tools. Automated ordering and porting let you focus on what makes your business great.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/icon-5.svg" alt="">
+            <h3>Tools and Services</h3>
+            <p>Access powerful communications tools that help lower operational costs, all backed by an industry-leading team of experts.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/icon-6.svg" alt="">
+            <h3>Voice</h3>
+            <p>Our Tier 1 nationwide all-IP voice network gives you the reach, reliability, scalability, and quality you need whether you’re a carrier looking to grow your footprint.</p>
+        </div> 
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="images/about-img.svg" alt="">
+    </div>
+
+    <div class="content">
+        <h3>why you should <span class="line-down">choose us?</span></h3>
+        <p>Bandwidth is a communications platform with limitless flexibility. You need integrations, enterprise-class APIs, and tools to manage your communications stack intelligently. We are open where you need it the most, with optionality and control.</p>
+        <p>Bandwidth is rooted in both telecom and real-world software expertise. Let us help you create experiences that set your business apart.</p>
+        <a href="#" class="btn">read more</a>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="price.html">pricing</a>
+            <a href="reviews.html">reviews</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">team members</a>
+            <a href="#">payments</a>
+            <a href="#">terms of use</a>
+            <a href="#">privacy policy</a>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+            <a href="#">+123-456-7890</a>
+            <a href="#">+111-222-3333</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/" target="_blank">facebook</a>
+            <a href="https://twitter.com/" target="_blank">twitter</a>
+            <a href="https://www.instagram.com/" target="_blank">instagram</a>
+            <a href="https://www.linkedin.com/feed/" target="_blank">linkedin</a>
+        </div>
+    </div>
+</section>
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/indexScript.js"></script>
+
+    
+</body>
+</html>
