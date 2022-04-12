@@ -44,7 +44,12 @@
 </header>
 <script>
     var i=localStorage.getItem('LogInAccount');
-    document.getElementById("reloadText").innerHTML="welcome "+myArray[i].firstName;
+    if(i==0){
+        document.getElementById("reloadText").innerHTML="welcome "+myArray[i].firstName;
+    }else{
+        document.getElementById("logout").style.display="none";
+    }
+    
 </script>
 <!-- header section ends     -->
 
