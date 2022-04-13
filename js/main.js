@@ -25,7 +25,7 @@ function op() {
       document.getElementById("pwd").value = null;
     }
   } else {
-    alert("please enter sth");
+    alert("Incomplete Information!");
   }
 
 
@@ -63,17 +63,17 @@ function Lop(){
   let Lgpassword=document.getElementById("Lpassword").value;
   if(Lguseremail!=0&&Lgpassword!=0){
     if(VerifyAccount(Lguseremail,Lgpassword)==0){
-      alert("login successful");
-      window.open("file:///C:/Users/baida/OneDrive/%E6%A1%8C%E9%9D%A2/web-projects/project%202/index.html","_blank");
+      alert("Login Successful!");
+      window.open("index.html","_blank");
       // var ii=localStorage.getItem('LogInAccount');
       // document.getElementById("reloadText").innerHTML=myArray[ii].firstName;
       
     }else{
-      alert("Username or password is incorrect");
+      alert("Username or Password is Incorrect!");
 
     }
   }else{
-    alert("please enter sth");
+    alert("Incomplete Information");
   }
 }
 function VerifyAccount(email,password){
@@ -87,11 +87,12 @@ function VerifyAccount(email,password){
   return 1;
 }
 function clearf(){
-  // 移除所有
-localStorage.clear();
-
+  // clear all the information
+  localStorage.clear();
 }
+
 function logout(){
   localStorage.removeItem('LogInAccount');
   location.reload();
+  alert("Logout Successfully!");
 }

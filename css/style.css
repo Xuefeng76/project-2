@@ -133,6 +133,20 @@ section {
   margin-top: 0;
 }
 
+#helloWords {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+#helloWords #d2 {
+  text-align: right;
+}
+
+#helloWords #d2 button {
+  background: #cae8e3;
+  width: 5.5rem;
+}
+
 #user {
   color: #000;
 }
@@ -412,14 +426,13 @@ section {
   padding: 3rem 2rem;
   border-radius: .5rem;
   background: #fff;
-}
+  /* &:nth-child(2){
+        border:$border;
 
-.pricing .box-container .box:nth-child(2) {
-  border: 0.2rem solid #000;
-}
-
-.pricing .box-container .box:nth-child(2) h3 {
-  background: #f6e4d5;
+        h3{
+          background: $pink;
+        }
+      } */
 }
 
 .pricing .box-container .box h3 {

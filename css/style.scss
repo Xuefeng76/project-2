@@ -141,6 +141,21 @@ section{
   }
 }
 
+#helloWords{
+  display: inline-block;
+  margin-right: 1rem;
+
+  #d2{
+    text-align: right;
+    button{
+      background: $blue;
+      width: 5.5rem;
+    }
+  }
+
+
+}
+
 #user{
     color:$black;
     &:hover{
@@ -411,13 +426,13 @@ section{
       border-radius: .5rem;
       background: $white;
 
-      &:nth-child(2){
+      /* &:nth-child(2){
         border:$border;
 
         h3{
           background: $pink;
         }
-      }
+      } */
 
       h3{
         font-size: 2rem;

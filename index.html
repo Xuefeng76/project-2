@@ -29,6 +29,10 @@
     </nav>
 
     <div >
+        <div id="helloWords">
+            <div><h2 id="reloadText">Please Log In First</h2></div>
+            <div id="d2"><button id="logout" onclick="logout()" >LogOut</button></div>
+        </div>
         <a href="logIn.html" id="user"><span id="user-account" class="fas fa-user"></span></a>
         <span id="menu-btn" class="fas fa-bars"></span>
     </div>
@@ -37,14 +41,14 @@
 
     <div id="menu-btn" class="fas fa-bars"></div> -->
     
-    <p id="reloadText">Please Log In First</p>
+    
     <a href="logIn.html" target="_blank" class="btn">join us</a>
-    <button id="logout" onclick="logout()">LogOut</button>
+    
 
 </header>
 <script>
     var i=localStorage.getItem('LogInAccount');
-    if(i==0){
+    if(i>=0){
         document.getElementById("reloadText").innerHTML="welcome "+myArray[i].firstName;
     }else{
         document.getElementById("logout").style.display="none";

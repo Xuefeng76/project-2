@@ -7,7 +7,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
 }
 
 html {
@@ -186,6 +185,17 @@ html::-webkit-scrollbar-thumb {
 
 .login .card form input:focus {
   outline: 1px solid #B4E1F9;
+}
+
+.login .card .form-btn {
+  text-align: center;
+}
+
+.login .card .form-btn button {
+  background: #20a7ef;
+  height: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
 .login .card ul {

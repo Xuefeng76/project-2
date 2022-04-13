@@ -6,7 +6,7 @@
   box-sizing: border-box;
   outline: none; border:none;
   text-decoration: none;
-  text-transform: capitalize;
+  //text-transform: capitalize;
 }
 
 $black: #000;
@@ -195,6 +195,16 @@ html{
   
         &:focus {
           outline: 1px solid $main-color;
+        }
+      }
+
+      .form-btn{
+        text-align: center;
+        button{
+          background: $second-color;
+          height: 2rem;
+          margin-bottom: 2rem;
+          width: 100%;
         }
       }
   

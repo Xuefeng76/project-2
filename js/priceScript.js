@@ -39,3 +39,18 @@ month.onclick = () =>{
         months.style.display = 'block';
     });
 };
+
+let btns = document.querySelectorAll('.btn')
+for(var i=0;i<btns.length;i++){
+    btns[i].onclick = function(){
+        
+        for(var j=0;j<btns.length;++j){
+            btns[j].parentNode.style.border = "";
+            btns[j].parentNode.firstElementChild.style.backgroundColor = '#B4E1F9';
+        } 
+        var box= this.parentNode;
+        box.style.border = "2px solid";
+        box.firstElementChild.style.backgroundColor = '#f6e4d5';
+        
+    }
+}
